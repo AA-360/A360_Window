@@ -1,0 +1,1 @@
+[{"name":"GetAllWindowsName","label":"GetAllWindowsName","description":"Returns all opened windows","mainClass":"com.automationanywhere.botcommand.samples.commands.basic.ListWindowsCommand","icon":"pkg.svg","returnType":"LIST","returnSubtype":"STRING","returnLabel":"","returnRequired":true,"attributes":[{"name":"name","label":"Window Name","description":"Key","type":"TEXT"}]}]
