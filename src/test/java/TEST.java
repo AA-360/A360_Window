@@ -25,7 +25,7 @@ public class TEST {
             alert(e.getMessage());
         }
 
-
+        alert("OK");
 
         BasicDataSource crunchifyDS = new BasicDataSource();
 
