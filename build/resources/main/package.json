@@ -1,29 +1,36 @@
 {
-    "name": "BsWindow",
-    "label": "BsWindow",
+    "name": "Cmd_Uts",
+    "label": "Cmd_Uts",
     "description": "",
     "group": "com.automationanywhere",
-    "artifactName": "BsWindow",
-    "packageVersion": "1.0-20210527-145530",
-    "codeVersion": "1.0-20210527-145530",
+    "artifactName": "Cmd_Uts",
+    "packageVersion": "1.0-20221221-153541",
+    "codeVersion": "1.0-20221221-153541",
     "author": "",
     "commands": [
         {
-            "name": "GetAllWindowsName",
-            "label": "GetAllWindowsName",
-            "description": "Returns all opened windows",
-            "mainClass": "com.automationanywhere.botcommand.samples.commands.basic.ListWindowsCommand",
+            "name": "GetCmdResponse",
+            "label": "GetCmdResponse",
+            "description": "Runs a CMD command and returns the response",
+            "nodeLabel": "runs command {{command}} and gets reponse to {{returnTo}}",
+            "mainClass": "com.automationanywhere.botcommand.samples.commands.basic.GetCmdResponseCommand",
             "icon": "pkg.svg",
-            "returnType": "LIST",
-            "returnSubtype": "STRING",
+            "returnType": "STRING",
+            "returnSubtype": "UNDEFINED",
             "returnLabel": "",
             "returnRequired": true,
+            "returnDescription": "return value",
             "attributes": [
                 {
-                    "name": "name",
-                    "label": "Window Name",
-                    "description": "Key",
-                    "type": "TEXT"
+                    "name": "command",
+                    "label": "command",
+                    "description": "command to run",
+                    "type": "TEXT",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
                 }
             ]
         }
